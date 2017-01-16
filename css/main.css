@@ -24,41 +24,47 @@ body {
 }
 
 section {
-  margin: 0 1rem;
+  margin: 0;
+}
+
+.text {
+  margin-left: 1rem;
 }
 
 h1 {
   margin-bottom: 1.2rem;
+  text-align: left;
 }
 
 h2 {
   font-size: 1rem;
   margin: 0;
+  text-align: left;
 }
 
 p {
   font-size: 1rem;
   margin-top: 0;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
+  text-align: center;
   background-color: #555;
   padding: .5em .75em;
   border: 2px;
   border-radius: 4px;
-}
-
-.img-sec {
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .img-flex {
   display: block;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -91,6 +97,27 @@ a {
   p {
     font-size: 1rem;
     max-width: 90%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .text {
+    vertical-align: middle;
+  }
+
+  .img-flex {
+    vertical-align: middle;
   }
 
 }
