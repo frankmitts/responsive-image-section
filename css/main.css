@@ -32,6 +32,7 @@ section {
 }
 
 h1 {
+  margin-top: 1rem;
   margin-bottom: 1.2rem;
   text-align: left;
 }
@@ -61,6 +62,10 @@ a {
   margin-bottom: 1rem;
 }
 
+a:hover {
+  background-color: #000;
+}
+
 .img-flex {
   display: block;
   width: 100%;
@@ -83,20 +88,23 @@ a {
     line-height: 1.4;
   }
 
-  section {
+  .text {
     display: inline-block;
-    max-width: 47.5%;
-    margin-right: 0;
-    margin-left: 1.2rem;
+    max-width: 45%;
+    vertical-align: middle;
+    margin-top: 1rem;
   }
 
-  h1 {
+  .img {
+    margin-left: .5rem;
     margin-top: 2rem;
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
   }
 
   p {
     font-size: 1rem;
-    max-width: 90%;
   }
 
 }
@@ -118,6 +126,29 @@ a {
 
   .img-flex {
     vertical-align: middle;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.6;
+  }
+
+  .text {
+    margin-left: 10rem;
+    margin-top: 0;
+    max-width: 35%;
+  }
+
+  .img {
+    max-width: 40%;
+  }
+
+  .img-flex {
+    width: 90%;
   }
 
 }
